@@ -15,6 +15,7 @@
 		D01F774523885BEB0089B78E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D01F774323885BEB0089B78E /* LaunchScreen.storyboard */; };
 		D01F774E23885CAA0089B78E /* friendFace.json in Resources */ = {isa = PBXBuildFile; fileRef = D01F774C23885C740089B78E /* friendFace.json */; };
 		D01F775023885D4B0089B78E /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F774F23885D4B0089B78E /* Friend.swift */; };
+		D01F775223885DB70089B78E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F775123885DB70089B78E /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D01F774623885BEB0089B78E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D01F774C23885C740089B78E /* friendFace.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = friendFace.json; sourceTree = "<group>"; };
 		D01F774F23885D4B0089B78E /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		D01F775123885DB70089B78E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				D01F773A23885BEA0089B78E /* SceneDelegate.swift */,
 				D01F773C23885BEA0089B78E /* ContentView.swift */,
 				D01F774F23885D4B0089B78E /* Friend.swift */,
+				D01F775123885DB70089B78E /* Person.swift */,
 				D01F773E23885BEB0089B78E /* Assets.xcassets */,
 				D01F774323885BEB0089B78E /* LaunchScreen.storyboard */,
 				D01F774623885BEB0089B78E /* Info.plist */,
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D01F775223885DB70089B78E /* Person.swift in Sources */,
 				D01F773923885BEA0089B78E /* AppDelegate.swift in Sources */,
 				D01F773B23885BEA0089B78E /* SceneDelegate.swift in Sources */,
 				D01F773D23885BEA0089B78E /* ContentView.swift in Sources */,
