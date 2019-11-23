@@ -27,9 +27,16 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitle("FriendFace")
-            .navigationBarItems(trailing: Button("Fetch") {
-                    self.fetch()
-            })
+            .navigationBarItems(trailing:
+                HStack {
+                    Button("DeleteAll") {
+                        self.deleteAll()
+                    }
+                    Button("Fetch") {
+                        self.fetch()
+                    }
+                }
+            )
         }
         .alert(isPresented: self.$showingError) {
             Alert(title: Text("Error"), message: Text(self.errorMessage), dismissButton: .default(Text("ok")))
@@ -62,6 +69,26 @@ struct ContentView: View {
         
         if moc.hasChanges {
             try? moc.save()
+        }
+    }
+    
+    func deleteAll() {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>()
+
+        fetchRequest.entity = CDPerson.entity()
+        fetchRequest.includesPropertyValues = false
+
+        do
+        {
+            let results = try moc.fetch(fetchRequest)
+            for managedObject in results
+            {
+                if let object = managedObject as? NSManagedObject {
+                    moc.delete(object)
+                }
+            }
+        } catch let error as NSError {
+            print("Delete All Error : \(error) ")
         }
     }
 }
