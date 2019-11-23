@@ -10,10 +10,14 @@ enum PeopleFetcherError: Error {
 
 class PeopleFetcher {
     func fetch(completion: @escaping (Result<[Person], PeopleFetcherError>) -> Void) {
+        let config = URLSessionConfiguration.default
+        config.requestCachePolicy = .reloadIgnoringLocalCacheData
+        config.urlCache = nil
+
         let url = URL(string: "https://www.hackingwithswift.com/samples/friendface.json")!
         let request = URLRequest(url: url)
-        
-        URLSession.shared.dataTask(with: request) { data, response, error in
+
+        URLSession(configuration: config).dataTask(with: request) { data, response, error in
             guard let data = data else {
                 completion(.failure(.unhandled(error: error)))
                 return

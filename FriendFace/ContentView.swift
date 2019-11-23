@@ -29,6 +29,9 @@ struct ContentView: View {
                     self.fetch()
             })
         }
+        .alert(isPresented: self.$showingError) {
+            Alert(title: Text("Error"), message: Text(self.errorMessage), dismissButton: .default(Text("ok")))
+        }
     }
     
     func fetch() {
