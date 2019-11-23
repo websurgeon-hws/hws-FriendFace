@@ -24,6 +24,7 @@
 		D01F77652389AA5A0089B78E /* CDFriend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F77612389AA5A0089B78E /* CDFriend+CoreDataProperties.swift */; };
 		D01F77662389AA5A0089B78E /* CDPerson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F77622389AA5A0089B78E /* CDPerson+CoreDataClass.swift */; };
 		D01F77672389AA5A0089B78E /* CDPerson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F77632389AA5A0089B78E /* CDPerson+CoreDataProperties.swift */; };
+		D01F77692389B1950089B78E /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F77682389B1950089B78E /* PeopleListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		D01F77612389AA5A0089B78E /* CDFriend+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDFriend+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D01F77622389AA5A0089B78E /* CDPerson+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPerson+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D01F77632389AA5A0089B78E /* CDPerson+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPerson+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D01F77682389B1950089B78E /* PeopleListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				D01F773823885BEA0089B78E /* AppDelegate.swift */,
 				D01F773A23885BEA0089B78E /* SceneDelegate.swift */,
 				D01F773C23885BEA0089B78E /* ContentView.swift */,
+				D01F77682389B1950089B78E /* PeopleListView.swift */,
 				D01F775923893FFA0089B78E /* PersonDetailView.swift */,
 				D01F774F23885D4B0089B78E /* Friend.swift */,
 				D01F775123885DB70089B78E /* Person.swift */,
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D01F775223885DB70089B78E /* Person.swift in Sources */,
+				D01F77692389B1950089B78E /* PeopleListView.swift in Sources */,
 				D01F77662389AA5A0089B78E /* CDPerson+CoreDataClass.swift in Sources */,
 				D01F77672389AA5A0089B78E /* CDPerson+CoreDataProperties.swift in Sources */,
 				D01F773923885BEA0089B78E /* AppDelegate.swift in Sources */,
