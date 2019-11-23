@@ -18,6 +18,7 @@
 		D01F775223885DB70089B78E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F775123885DB70089B78E /* Person.swift */; };
 		D01F775423885E6A0089B78E /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F775323885E6A0089B78E /* People.swift */; };
 		D01F775823885FDD0089B78E /* PeopleFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F775723885FDD0089B78E /* PeopleFetcher.swift */; };
+		D01F775A23893FFA0089B78E /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F775923893FFA0089B78E /* PersonDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		D01F775123885DB70089B78E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		D01F775323885E6A0089B78E /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		D01F775723885FDD0089B78E /* PeopleFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleFetcher.swift; sourceTree = "<group>"; };
+		D01F775923893FFA0089B78E /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				D01F773823885BEA0089B78E /* AppDelegate.swift */,
 				D01F773A23885BEA0089B78E /* SceneDelegate.swift */,
 				D01F773C23885BEA0089B78E /* ContentView.swift */,
+				D01F775923893FFA0089B78E /* PersonDetailView.swift */,
 				D01F774F23885D4B0089B78E /* Friend.swift */,
 				D01F775123885DB70089B78E /* Person.swift */,
 				D01F775323885E6A0089B78E /* People.swift */,
@@ -168,6 +171,7 @@
 				D01F773D23885BEA0089B78E /* ContentView.swift in Sources */,
 				D01F775823885FDD0089B78E /* PeopleFetcher.swift in Sources */,
 				D01F775423885E6A0089B78E /* People.swift in Sources */,
+				D01F775A23893FFA0089B78E /* PersonDetailView.swift in Sources */,
 				D01F775023885D4B0089B78E /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,17 +10,21 @@ struct ContentView: View {
     @State private var showingError = false
     @State private var errorMessage = ""
     
+    @State private var showingDetailView = false
+
     var body: some View {
         NavigationView {
             List {
                 ForEach(people.items, id: \.id) { person in
-                    VStack(alignment: .leading) {
-                        Text("\(person.name)")
-                            .font(.headline)
+                    NavigationLink(destination: PersonDetailView(person: person)) {
+                        VStack(alignment: .leading) {
+                            Text("\(person.name)")
+                                .font(.headline)
 
-                        Text("Age: \(person.age)")
-                            .font(.subheadline)
-                            .foregroundColor(.gray)
+                            Text("Age: \(person.age)")
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                        }
                     }
                 }
             }
