@@ -12,8 +12,17 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List(people.items, id: \.id) {
-                Text("\($0.name)")
+            List {
+                ForEach(people.items, id: \.id) { person in
+                    VStack(alignment: .leading) {
+                        Text("\(person.name)")
+                            .font(.headline)
+
+                        Text("Age: \(person.age)")
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                    }
+                }
             }
             .navigationBarTitle("FriendFace")
             .navigationBarItems(trailing: Button("Fetch") {
