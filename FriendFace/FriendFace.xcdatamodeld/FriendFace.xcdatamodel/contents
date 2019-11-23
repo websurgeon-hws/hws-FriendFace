@@ -4,6 +4,11 @@
         <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <relationship name="friends" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDPerson" inverseName="friends" inverseEntity="CDPerson"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <entity name="CDPerson" representedClassName="CDPerson" syncable="YES">
         <attribute name="about" optional="YES" attributeType="String"/>
@@ -17,6 +22,11 @@
         <attribute name="registered" optional="YES" attributeType="String"/>
         <attribute name="tags" optional="YES" attributeType="String"/>
         <relationship name="friends" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CDFriend" inverseName="friends" inverseEntity="CDFriend"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <elements>
         <element name="CDFriend" positionX="-63" positionY="-18" width="128" height="88"/>
