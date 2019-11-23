@@ -19,3 +19,19 @@ struct Person {
 }
 
 extension Person: Decodable {}
+
+extension Person {
+    init(person: CDPerson) {
+        self.id = person.wrappedId
+        self.isActive = person.isActive
+        self.name = person.wrappedName
+        self.age = person.wrappedAge
+        self.company = person.wrappedCompany
+        self.email = person.wrappedEmail
+        self.address = person.wrappedAddress
+        self.about = person.wrappedAbout
+        self.registered = person.wrappedRegistered
+        self.tags = person.tagsArray
+        self.friends = person.friendsArray.map { Friend.init(friend: $0) }
+    }
+}

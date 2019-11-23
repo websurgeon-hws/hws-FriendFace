@@ -10,3 +10,10 @@ struct Friend {
 }
 
 extension Friend: Decodable {}
+
+extension Friend {
+    init(friend: CDFriend) {
+        self.id = friend.wrappedId
+        self.name = friend.wrappedName
+    }
+}

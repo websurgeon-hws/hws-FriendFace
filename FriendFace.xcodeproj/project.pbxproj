@@ -20,6 +20,10 @@
 		D01F775823885FDD0089B78E /* PeopleFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F775723885FDD0089B78E /* PeopleFetcher.swift */; };
 		D01F775A23893FFA0089B78E /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F775923893FFA0089B78E /* PersonDetailView.swift */; };
 		D01F775D2389A62E0089B78E /* FriendFace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D01F775B2389A62E0089B78E /* FriendFace.xcdatamodeld */; };
+		D01F77642389AA5A0089B78E /* CDFriend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F77602389AA5A0089B78E /* CDFriend+CoreDataClass.swift */; };
+		D01F77652389AA5A0089B78E /* CDFriend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F77612389AA5A0089B78E /* CDFriend+CoreDataProperties.swift */; };
+		D01F77662389AA5A0089B78E /* CDPerson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F77622389AA5A0089B78E /* CDPerson+CoreDataClass.swift */; };
+		D01F77672389AA5A0089B78E /* CDPerson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F77632389AA5A0089B78E /* CDPerson+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		D01F775723885FDD0089B78E /* PeopleFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleFetcher.swift; sourceTree = "<group>"; };
 		D01F775923893FFA0089B78E /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
 		D01F775C2389A62E0089B78E /* FriendFace.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FriendFace.xcdatamodel; sourceTree = "<group>"; };
+		D01F77602389AA5A0089B78E /* CDFriend+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDFriend+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D01F77612389AA5A0089B78E /* CDFriend+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDFriend+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D01F77622389AA5A0089B78E /* CDPerson+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPerson+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D01F77632389AA5A0089B78E /* CDPerson+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPerson+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,10 @@
 		D01F773723885BEA0089B78E /* FriendFace */ = {
 			isa = PBXGroup;
 			children = (
+				D01F77602389AA5A0089B78E /* CDFriend+CoreDataClass.swift */,
+				D01F77612389AA5A0089B78E /* CDFriend+CoreDataProperties.swift */,
+				D01F77622389AA5A0089B78E /* CDPerson+CoreDataClass.swift */,
+				D01F77632389AA5A0089B78E /* CDPerson+CoreDataProperties.swift */,
 				D01F773823885BEA0089B78E /* AppDelegate.swift */,
 				D01F773A23885BEA0089B78E /* SceneDelegate.swift */,
 				D01F773C23885BEA0089B78E /* ContentView.swift */,
@@ -169,9 +181,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D01F775223885DB70089B78E /* Person.swift in Sources */,
+				D01F77662389AA5A0089B78E /* CDPerson+CoreDataClass.swift in Sources */,
+				D01F77672389AA5A0089B78E /* CDPerson+CoreDataProperties.swift in Sources */,
 				D01F773923885BEA0089B78E /* AppDelegate.swift in Sources */,
 				D01F773B23885BEA0089B78E /* SceneDelegate.swift in Sources */,
 				D01F773D23885BEA0089B78E /* ContentView.swift in Sources */,
+				D01F77642389AA5A0089B78E /* CDFriend+CoreDataClass.swift in Sources */,
+				D01F77652389AA5A0089B78E /* CDFriend+CoreDataProperties.swift in Sources */,
 				D01F775823885FDD0089B78E /* PeopleFetcher.swift in Sources */,
 				D01F775423885E6A0089B78E /* People.swift in Sources */,
 				D01F775D2389A62E0089B78E /* FriendFace.xcdatamodeld in Sources */,
